@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <title>Severyanochka</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__body">
+        <div class="header__logo">
+          <picture>
+            <source
+              srcset="images/adaptive/logo.png"
+              type="image/png"
+              media="(max-width:1200px)"
+            />
+            <img src="images/header/logo.png" alt="" class="header__img" />
+          </picture>
+        </div>
+        <div class="header__directory">
+          <button onclick="myFunction ()" class="header__btn">Каталог</button>
+          <div class="header__content">
+            <a href="#" class="header__products">Молоко, сыр, яйцо</a>
+            <a href="#" class="header__products">Хлеб</a>
+            <a href="#" class="header__products">Фрукты и овощи</a>
+            <a href="#" class="header__products">Замороженные продукты</a>
+            <a href="#" class="header__products">Напитки</a>
+            <a href="#" class="header__products">Кондитерские изделия</a>
+            <a href="#" class="header__products">Чай, кофе</a>
+            <a href="#" class="header__products">Бакалея</a>
+            <a href="#" class="header__products">Здоровое питание</a>
+            <a href="#" class="header__products">Зоотовары</a>
+            <a href="#" class="header__products">Детское питание</a>
+            <a href="#" class="header__products">Мясо, птица, колбаса</a>
+            <a href="#" class="header__products">Непродовольственные товары</a>
+          </div>
+        </div>
+        <div class="header__search">
+          <input
+            type="text"
+            class="header__searcher"
+            placeholder="Найти товар"
+          />
+        </div>
+        <div class="header__navbar">
+          <div class="navbar-item">
+            <img src="images/header/01.png" alt="" class="navbar-img" />
+            <a href="#" class="navbar-text">Избранное</a>
+          </div>
+          <div class="navbar-item">
+            <img src="images/header/02.png" alt="" class="navbar-img" />
+            <a href="#" class="navbar-text">Заказы</a>
+          </div>
+          <div class="navbar-item">
+            <img src="images/header/03.png" alt="" class="navbar-img" />
+            <a href="#" class="navbar-text">Корзина</a>
+          </div>
+        </div>
+        <div class="header__userMenu">
+          <img src="images/header/avatar.png" alt="" class="user-photo" />
+          <span class="user-name">Алексей</span>
+          <div class="user-directory">
+            <button onclick="userFunction() " class="user-btn"></button>
+            <div class="user-list">
+              <a href="#" class="user-item">Мой профиль</a>
+              <a href="#" class="user-item">Настройки</a>
+              <a href="#" class="user-item">Выход</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="title">
+      <div class="container">
+        <div class="title__body">
+          <img src="images/title/products.png" alt="" class="title__image" />
+          <h1 class="title__text">Доставка бесплатно от 1000 ₽</h1>
+        </div>
+      </div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <div class="products__body">
+          <div class="products-sales">
+            <div class="products-top">
+              <h2 class="products-top-text">Акции</h2>
+              <span class="products-top-subtext">Все акции</span>
+            </div>
+            <div class="products-bottom">
+              <div class="products-item">
+                <img src="images/title/01.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                  <span class="products-price-2">50,50 ₽</span>
+                </div>
+                <div class="products-price-card">
+                  <p class="products-price-with-card">С картой</p>
+                  <p class="products-price-without-card">Обычная</p>
+                </div>
+                <span class="products-name"
+                  >Г/Ц Блинчики с мясом вес, Россия</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/02.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                  <span class="products-price-2">50,50 ₽</span>
+                </div>
+                <div class="products-price-card">
+                  <p class="products-price-with-card">С картой</p>
+                  <p class="products-price-without-card">Обычная</p>
+                </div>
+                <span class="products-name"
+                  >Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/03.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                  <span class="products-price-2">50,50 ₽</span>
+                </div>
+                <div class="products-price-card">
+                  <p class="products-price-with-card">С картой</p>
+                  <p class="products-price-without-card">Обычная</p>
+                </div>
+                <span class="products-name"
+                  >Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскана</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div id="four" class="products-item">
+                <img src="images/title/04.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                  <span class="products-price-2">50,50 ₽</span>
+                </div>
+                <div class="products-price-card">
+                  <p class="products-price-with-card">С картой</p>
+                  <p class="products-price-without-card">Обычная</p>
+                </div>
+                <span class="products-name"
+                  >Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-sales">
+            <div class="products-top">
+              <h2 class="products-top-text">Новинки</h2>
+              <span class="products-top-subtext">Все новинки</span>
+            </div>
+            <div class="products-bottom">
+              <div class="products-item">
+                <img src="images/title/05.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">599,99 ₽</span>
+                </div>
+                <span class="products-name"
+                  >Колбаса "Черкизовская" Чоризо, подкопчённая</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/04.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскана</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/03.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div id="four" class="products-item">
+                <img src="images/title/02.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+          <div class="products-sales">
+            <div class="products-top">
+              <h2 class="products-top-text">Покупали раньше</h2>
+              <span class="products-top-subtext">Все покупки</span>
+            </div>
+            <div class="products-bottom">
+              <div class="products-item">
+                <img src="images/title/06.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Ветчина из индейки, подкопчённая</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/03.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div class="products-item">
+                <img src="images/title/05.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+
+                <span class="products-name"
+                  >Колбаса "Черкизовская" Чоризо, подкопчённая</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+              <div id="four" class="products-item">
+                <img src="images/title/02.png" alt="" class="products-img" />
+                <div class="product__price">
+                  <span class="products-price-1">44,50 ₽</span>
+                </div>
+                <span class="products-name"
+                  >Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное</span
+                >
+                <div class="simple__rating">
+                  <div class="simple__rating__items">
+                    <input
+                      id="simple__rating__5"
+                      type="radio"
+                      value="5"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__5"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__4"
+                      type="radio"
+                      value="4"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__4"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__3"
+                      type="radio"
+                      value="3"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__3"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__2"
+                      type="radio"
+                      value="2"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__2"
+                      class="simple__rating__label"
+                    ></label>
+                    <input
+                      id="simple__rating__1"
+                      type="radio"
+                      value="1"
+                      class="rating"
+                      name="simple__rating"
+                    />
+                    <label
+                      for="simple__rating__1"
+                      class="simple__rating__label"
+                    ></label>
+                  </div>
+                </div>
+                <button class="products-btn">В корзину</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spec__offer">
+      <div class="container">
+        <div class="offer__title">
+          <h2 class="offer__title__text">Специальные предложения</h2>
+        </div>
+        <div class="offer__body">
+          <div class="offer__column__1">
+            <div class="offer__column__text">
+              <h3 class="offer__column__title">Оформите карту «Северяночка»</h3>
+              <span class="offer__column__subtitle"
+                >И получайте бонусы при покупке в магазинах и на сайте</span
+              >
+            </div>
+            <picture>
+              <source
+                srcset="images/adaptive/card.png"
+                type="image/png"
+                media="(max-width:992px)"
+              />
+              <img
+                src="images/offer/card.png"
+                alt=""
+                class="offer__column__img"
+              />
+            </picture>
+          </div>
+          <div class="offer__column__2">
+            <div class="offer__column__text">
+              <h3 class="offer__column__title">Покупайте акционные товары</h3>
+              <span class="offer__column__subtitle"
+                >И получайте вдвое больше бонусов</span
+              >
+            </div>
+            <img
+              src="images/offer/basket.png"
+              alt=""
+              class="offer__column__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map">
+      <div class="container">
+        <div class="map__title">
+          <h2 class="map__text">Наши магазины</h2>
+        </div>
+        <div class="map__body">
+          <div class="map__top">
+            <button class="map__btn">п.Щельяюр</button>
+            <button class="map__btn">д.Вертеп</button>
+            <button class="map__btn">с.Краснобор</button>
+            <button class="map__btn">д.Диюр</button>
+          </div>
+          <div class="map__bottom">
+            <img src="images/map/map.png" alt="" class="map__img" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="article">
+      <div class="container">
+        <div class="article__body">
+          <div class="article__top">
+            <h2 class="article__title">Статьи</h2>
+            <span class="article__subtitle">Все статьи</span>
+          </div>
+          <div class="article__bottom">
+            <div class="article__column">
+              <img src="images/article/01.png" alt="" class="column__img" />
+              <p class="articel__date">05.03.2021</p>
+              <h3 class="article__text">
+                Режим использования масок и перчаток на территории магазинов
+              </h3>
+              <span class="article__subtext"
+                >Подробная информация о режимах использования масок и перчаток
+                на территории магазинов "ЛЕНТА". Информация обновляется каждый
+                будний день.</span
+              >
+              <button class="article__btn">Подробнее</button>
+            </div>
+            <div class="article__column">
+              <img src="images/article/02.png" alt="" class="column__img" />
+              <p class="articel__date">05.03.2021</p>
+              <h3 class="article__text">Весеннее настроение для каждой</h3>
+              <span class="article__subtext"
+                >8 Марта – это не просто Международный женский день, это ещё
+                день тюльпанов, приятных сюрпризов и праздничных тёплых
+                пожеланий. А в нашем магазине проходит акция на покупку
+                букетов</span
+              >
+              <button class="article__btn">Подробнее</button>
+            </div>
+            <div class="article__column">
+              <img src="images/article/03.png" alt="" class="column__img" />
+              <p class="articel__date">05.03.2021</p>
+              <h3 class="article__text">
+                ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!
+              </h3>
+              <span class="article__subtext"
+                >Голосуйте за любимые категории, выбирайте категорию-победителя
+                в мобильном приложении и получайте кешбэк 10% баллами в
+                апреле!</span
+              >
+              <button class="article__btn">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
